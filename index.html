@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tu Empresa de Computadoras</title>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a Nuestra Tienda de Computadoras</h1>
+        <p>Tu destino para encontrar las mejores computadoras y accesorios.</p>
+    </header>
+
+    <section class="productos">
+        <h2>Nuestros Productos Destacados</h2>
+        <div class="producto">
+            <img src="img/producto1.jpeg" alt="Producto 1">
+            <h3>Computadora de Alta Gama</h3>
+            <p>Una potente computadora diseñada para cumplir con las demandas más exigentes. Con un procesador de última generación, gráficos avanzados y almacenamiento rápido, esta computadora está lista para cualquier tarea.</p>
+            <a href="#" onclick="mostrarVideo('img/video1.mp4')">Ver Detalles</a>
+        </div>
+
+        <div class="producto">
+            <img src="img/producto2.jpg" alt="Producto 2">
+            <h3>Laptop Ultradelgada</h3>
+            <p>Lleva contigo la potencia en cualquier lugar con nuestra laptop ultradelgada. Con un diseño elegante y características impresionantes, esta laptop es perfecta para profesionales en movimiento.</p>
+            <a href="#" onclick="mostrarVideo('img/video2.mp4')">Ver Detalles</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Tu Empresa de Computadoras. Todos los derechos reservados.</p>
+    </footer>
+
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="cerrarVideo()">&times;</span>
+            <video controls autoplay id="videoPlayer" width="600">
+                Tu navegador no soporta el tag de video.
+            </video>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
